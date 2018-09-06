@@ -1,8 +1,8 @@
 {
-    "name": "optimus/onion",
+    "name": "avonnadozie/liteonion",
     "autoload": {
         "psr-4": {
-            "Optimus\\Onion\\": "src/"
+            "LiteOnion\\": "src/"
         }
     },
     "require": {
@@ -13,7 +13,5 @@
         "phpunit/phpunit": "~4.7",
         "satooshi/php-coveralls": "dev-master@dev"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "license": "MIT"
 }
