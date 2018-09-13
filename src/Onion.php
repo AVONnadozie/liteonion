@@ -105,7 +105,8 @@ class Onion
     {
         return function ($object) use ($nextLayer, $layer) {
             if (!is_subclass_of($layer, OnionLayerInterface::class)) {
-                $message = 'Onion layers must implement the OnionLayerInterface interface';
+                $class = is_object($layer) ? get_class($layer) : $layer;
+                $message = "'$class' must implement the OnionLayerInterface interface";
                 throw new \Exception($message);
             }
 
